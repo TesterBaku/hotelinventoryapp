@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Room } from './rooms';
+import { Room, RoomList } from './rooms';
 
 @Component({
   selector: 'hinv-rooms',
@@ -20,6 +20,36 @@ export class RoomsComponent implements OnInit {
     availableRooms: 10,
     bookedRooms: 5
   }
+
+  roomList: RoomList[] = [{
+    roomNumber: 1,
+    roomType: 'Deluxe Room',
+    amenities: 'AirConditioner, Free Wi-Fi, TV, Bathroom, Kitche',
+    price: 500,
+    photos: '',
+    checkinTime: new Date('11-Nov-2021'),
+    checkoutTime: new Date('12-Nov-2021')
+  },
+  {
+    roomNumber: 2,
+    roomType: 'Deluxe Room',
+    amenities: 'AirConditioner, Free Wi-Fi, TV, Bathroom, Kitche',
+    price: 1000,
+    photos: '',
+    checkinTime: new Date('11-Nov-2021'),
+    checkoutTime: new Date('12-Nov-2021')
+  },
+  {
+    roomNumber: 3,
+    roomType: 'Private Suite',
+    amenities: 'AirConditioner, Free Wi-Fi, TV, Bathroom, Kitche',
+    price: 15000,
+    photos: '',
+    checkinTime: new Date('11-Nov-2021'),
+    checkoutTime: new Date('12-Nov-2021')
+  }
+
+  ]
 
 
   constructor() { }
